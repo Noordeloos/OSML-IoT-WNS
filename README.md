@@ -35,6 +35,8 @@ Bluemix account
 Node-RED for Raspberry Pi
 
 Scripts
+http://pastebin.com/raw/qwXLu0hu
+https://pimylifeup.com/raspberry-pi-light-sensor/
 Circuit diagram 1
 Circuit diagram 2
 Flow
@@ -60,8 +62,8 @@ Follow circuit
 wire pins
 
 PROGRAMMING
-Download C Script onto RPi
-Download Python Script onto RPi
+Download C Script onto RPi http://pastebin.com/raw/qwXLu0hu
+Download Python Script onto RPi https://pimylifeup.com/raspberry-pi-light-sensor/
 Run Node-RED
 Make flow
 Connect to BlueMix
