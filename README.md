@@ -82,7 +82,7 @@ Install Raspbian Jessie Image onto SD cards
 Change keyboard settings
 Connect to wi-fi
 Setup SHH
-Install Node-RED
+Install Node-RED npm install nodered
 
 CIRCUIT DIAGRAMS
 Follow circuit
