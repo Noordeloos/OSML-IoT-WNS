@@ -111,8 +111,8 @@ onto the command line. That is your IP address. Enter the IP address onto Putty 
 
 Install Node-RED
 If you have the full pixel version of Raspbian Jessie running, Node-RED is already pre-installed and you don't need to install it. You may need to update it, however. From your secure shell, use this command to update Node-RED.
-  sudo apt-get install nodered
-Follow the instructions here https://nodered.org/docs/getting-started/upgradingfor upgrading npm to version 2.x. Once you have the latest npm version, download the node-red dashboard like this:
+  update-nodejs-and-nodered
+Follow the instructions here https://nodered.org/docs/hardware/raspberrypi for upgrading Node-RED and npm to version. Once you have the latest npm version, download the node-red dashboard like this:
   cd ~/.node-red
   npm install node-red-dashboard
 Use this command to stop Node-RED:
@@ -123,13 +123,39 @@ Use this command to start up Node-RED again:
 
 CIRCUIT DIAGRAMS
 Follow circuit
-From pin 2 on the Pi, connect a wire to the power pin on the DHT11.
-wire pins
+1. From pin 2 on the Pi, connect a wire to the power pin on the DHT11. 
+2. From pin & on the Pi, connect a wire to the data pin onthe DHT11. 
+3. From the ground pin on the DHT11, connect a wire to the negative (long) end of the capacitor. 
+4. Connect the positive (short) end of the capacitor to the negative end of the LDR. 
+5. From pin 1 on the Pi, connect a wire to the positive end of the LDR. 
+6. From pin 12 on the Pi, connect a wire to the inersect node of the positive end of the capacitor and the negative end of the LDR. This will be your data line. 
+7. From pin 9 on the Pi, connect a wire to the ground pin on the DHT11.
 
 PROGRAMMING
 Download C Script onto RPi
+From your home directory (use the command cd ~ to get to it if you're not there yet), make a new folder called 'DHT11'. Create a file, using your favorite editor, called 'dht11.c' (here is an example using vi editor). Then, follow the instructions here http://pastebin.com/raw/qwXLu0hu to write and compile an executable file.
+  mkdir DHT11
+  cd DHT11
+  vi dht11.c
+
 Download Python Script onto RPi
+Similarly, from your home directory, make a folder called 'LDR'. Use the command below to clone the Python code from https://pimylifeup.com/raspberry-pi-light-sensor/.
+  mkdir LDR
+  cd LDR
+  git clone https://github.com/pimylifeup/Light_Sensor/
+  cd ./Light_Sensor
+  
 Run Node-RED
+With the above command, 'node-red-start', makes sure Node-RED is running. Look for the line on the startup message that gives you the IP address to access from your internet browser. It should be something like '123.123.0.123:1880'. Enter the IP address you get into your web browser and you should load something like this. Note the dashboard tab.
+
 Make flow
+1. Click on the three line button on the top right menu.
+2. Click the Import tab.
+3. Hover over 'Clipboard' and click.
+4. Copy the flow from the file 'WSNFlow' on this repository into the box.
+5. Click 'Import'.
+6. You should see a flow trailing your cursor. Click on the area on the clean screen where you would like to paste it. Click the top right 'Deploy' Button.
+7. Test it! Click the light blue button to the left of the 'Light, Temperaure, Humidity' bubble. See your progress on the debug tab on the right.
+
 Connect to BlueMix
 
