@@ -36,39 +36,12 @@ The project requires:
 - Bluemix account
 - Node-RED for Raspberry Pi
 
-## Scripts:
+## Scripts/Circuits:
 - http://pastebin.com/raw/qwXLu0hu
 - https://pimylifeup.com/raspberry-pi-light-sensor/
 - Circuit diagram 1
 - Circuit diagram 2
 - Flow
-
-# STEPS:
-
-## HARDWARE
-### Make Cases
-### Widen RPi holes
-### Assemble
-### Power Up
-### Connect to display monitor
-
-## SOFTWARE
-### Install Raspbian Jessie Image onto SD cards
-### Change keyboard settings
-### Connect to wi-fi
-### Setup SHH
-### Install Node-RED
-
-## CIRCUIT DIAGRAMS
-### Follow circuit
-### wire pins
-
-## PROGRAMMING
-### Download C Script onto RPi
-### Download Python Script onto RPi
-### Run Node-RED
-### Make flow
-### Connect to BlueMix
 
 let's Get Started!
 
@@ -78,7 +51,7 @@ let's Get Started!
 Solder header onto the top side of the Pi Zero boards.
 
 ### Make Cases
-Our lab has a laser cutter, so we custom-made cases for our PiZeros. You may find the schematics we used for our laser-cutter here https://www.thingiverse.com/make:282969. The schematics are bespoke for a non-wireless PiZero, but they can still be used for the wireless PiZeros; although the heat vent won't line up as nicely. If getting a Pi as part of a kit, like CanaKit, you can use the included case. You may order a Pi through CanaKit here: www.canakit.com.
+Our lab has a laser cutter, so we custom-made cases for our PiZeros. You may find the schematics we used for our laser-cutter [here](https://www.thingiverse.com/make:282969). The schematics are bespoke for a non-wireless PiZero, but they can still be used for the wireless PiZeros; although the heat vent won't line up as nicely. If getting a Pi as part of a kit, like CanaKit, you can use the included case. You may order a Pi through CanaKit [here](www.canakit.com).
 
 ### Widen RPi holes
 If using the bespoke laser-cut case like we did, I recommend enlarging the corner holes of the PiZero board. We used M3 bolts to secure the case, so we widened the holes using incrasingly larger drill bits.
@@ -108,7 +81,7 @@ Download Putty for your laptop http://www.putty.org/ or Bitvise https://www.bitv
 
 ### Install Node-RED
 If you have the full pixel version of Raspbian Jessie running, Node-RED is already pre-installed and you don't need to install it. You may need to update it, however. From your secure shell, use this command to update Node-RED `update-nodejs-and-nodered`.
-Follow the instructions here https://nodered.org/docs/hardware/raspberrypi for upgrading Node-RED and npm to version. Once you have the latest npm version, download the node-red dashboard like this:
+Follow the instructions [here](https://nodered.org/docs/hardware/raspberrypi) for upgrading Node-RED and npm to version. Once you have the latest npm version, download the node-red dashboard like this:
  ```
  cd ~/.node-red
  npm install node-red-dashboard
@@ -135,7 +108,7 @@ node-red-start
 
 ## PROGRAMMING
 ### Download C Script onto RPi
-From your home directory (use the command `cd ~` to get to it if you're not there yet), make a new folder called 'DHT11'. Create a file, using your favorite editor, called 'dht11.c' (here is an example using vi editor). Then, follow the instructions here http://pastebin.com/raw/qwXLu0hu to write and compile an executable file.
+From your home directory (use the command `cd ~` to get to it if you're not there yet), make a new folder called 'DHT11'. Create a file, using your favorite editor, called 'dht11.c' (here is an example using vi editor). Then, follow the instructions [here](http://pastebin.com/raw/qwXLu0hu) to write and compile an executable file.
 ```
 mkdir DHT11
 cd DHT11
