@@ -7,32 +7,32 @@ The purpose of this project is to convert PiZeros into wireless network nodes th
 The project requires:
 
 Hardware
-3 PiZeros with internet (or internet dongles if using PiZeros or Pi 3s without internet)
-3 PiZero power adaptors
-1 Monitor with HDMI output
-Laptop or Desktop
-USB Keyboard
-USB Mouse
-1 HDMI cable
-USB 2.0 to micorUSB hub
-3 HDMI to microHDMI adaptors
-Wi-fi USB dongle
-40 pin Header
-3 Cases (optional)
-3 small bread boards
-3 DHT11 sensors
-3 LDR sensore
-3 1 uF capacitors
-Assorted wire
-Solder wire
-Flux
-Soldering station
-Sponge of wire wool
-Painter's tape
+• 3 PiZeros with internet (or internet dongles if using PiZeros or Pi 3s without internet)
+• 3 PiZero power adaptors
+• 1 Monitor with HDMI output
+• Laptop or Desktop
+• USB Keyboard
+• USB Mouse
+• 1 HDMI cable
+• USB 2.0 to micorUSB hub
+• 3 HDMI to microHDMI adaptors
+• Wi-fi USB dongle
+• 40 pin Header
+• 3 Cases (optional)
+• 3 small bread boards
+• 3 DHT11 sensors
+• 3 LDR sensore
+• 3 1 uF capacitors
+• Assorted wire
+• Solder wire
+• Flux
+• Soldering station
+• Sponge of wire wool
+• Painter's tape
 
 Software
-3 microSD cards loaded with the latest Raspbian Jessie OS
-PUTTY or other SSH Client
+• 3 microSD cards loaded with the latest Raspbian Jessie OS
+• PUTTY or other SSH Client
 Bluemix account
 Node-RED for Raspberry Pi
 
