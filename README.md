@@ -7,8 +7,8 @@ The purpose of this project is to convert PiZeros into wireless network nodes th
 The project requires:
 
 ## Hardware:
-- 3 PiZeros with internet (or internet dongles if using PiZeros or Pi 3s without internet)
-- 3 PiZero power adaptors
+- 3 Pi Zeros with internet (or internet dongles if using Pi Zeros or Pi 3s without internet)
+- 3 Pi Zero power adaptors
 - 1 Monitor with HDMI output
 - Laptop or Desktop
 - USB Keyboard
@@ -51,10 +51,10 @@ let's Get Started!
 Solder header onto the top side of the Pi Zero boards.
 
 ### Make Cases
-Our lab has a laser cutter, so we custom-made cases for our PiZeros. You may find the schematics we used for our laser-cutter [here](https://www.thingiverse.com/make:282969). The schematics are bespoke for a non-wireless PiZero, but they can still be used for the wireless PiZeros; although the heat vent won't line up as nicely. If getting a Pi as part of a kit, like CanaKit, you can use the included case. You may order a Pi through CanaKit [here](www.canakit.com).
+Our lab has a laser cutter, so we custom-made cases for our Pi Zeros. You may find the schematics we used for our laser-cutter [here](https://www.thingiverse.com/make:282969). The schematics are bespoke for a non-wireless Pi Zero, but they can still be used for the wireless Pi Zeros; although the heat vent won't line up as nicely. If getting a Pi as part of a kit, like CanaKit, you can use the included case. You may order a Pi through CanaKit [here](www.canakit.com).
 
 ### Widen RPi holes
-If using the bespoke laser-cut case like we did, I recommend enlarging the corner holes of the PiZero board. We used M3 bolts to secure the case, so we widened the holes using incrasingly larger drill bits.
+If using the bespoke laser-cut case like we did, I recommend enlarging the corner holes of the Pi Zero board. We used M3 bolts to secure the case, so we widened the holes using incrasingly larger drill bits.
 
 ### Assemble
 Stack the case components according to the thingiverse instructions. I recommend using tape to hold together the center of the case while screwing in the bolts onto the case.
