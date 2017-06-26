@@ -160,7 +160,10 @@ Make flow
 Connect to BlueMix
 
 1. Create a account with IBM bluemix.
-2. Launch an IoT platform service.(Pic)
+2. Launch an IoT platform service.
+
+![screen shot 2017-06-26 at 1 07 37 pm](https://user-images.githubusercontent.com/29682535/27558006-8f659f9e-5a70-11e7-9f85-ee45bdc4c87c.png)
+
 3. Follow this recipe to create and register a device (Pi) with Bluemix. Be sure to copy the device credentials.  https://developer.ibm.com/recipes/tutorials/how-to-register-devices-in-ibm-iot-foundation/
 4. In Node-RED, drag and drop a 'Watson IoT' output node into the flow.(Pic)
 5. Connect the outputs of both function Nodes to the 'Watson IoT' node.
