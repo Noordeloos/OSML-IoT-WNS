@@ -117,7 +117,7 @@ vi dht11.c
 Then, follow the instructions [here](http://pastebin.com/raw/qwXLu0hu) to write and compile an executable file.
 
 ### Download Python Script onto RPi
-Similarly, from your home directory, make a folder called 'LDR'. Use the command below to clone the Python code from https://pimylifeup.com/raspberry-pi-light-sensor/.
+Similarly, from your home directory, make a folder called 'LDR'. Use the command below to clone the [Python code](https://pimylifeup.com/raspberry-pi-light-sensor/).
 ```
 mkdir LDR
 cd LDR
