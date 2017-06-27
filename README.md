@@ -108,12 +108,13 @@ node-red-start
 
 ## PROGRAMMING
 ### Download C Script onto RPi
-From your home directory (use the command `cd ~` to get to it if you're not there yet), make a new folder called 'DHT11'. Create a file, using your favorite editor, called 'dht11.c' (here is an example using vi editor). Then, follow the instructions [here](http://pastebin.com/raw/qwXLu0hu) to write and compile an executable file.
+From your home directory (use the command `cd ~` to get to it if you're not there yet), make a new folder called 'DHT11'. Create a file, using your favorite editor, called 'dht11.c' (here is an example using vi editor).
 ```
 mkdir DHT11
 cd DHT11
 vi dht11.c
 ```
+Then, follow the instructions [here](http://pastebin.com/raw/qwXLu0hu) to write and compile an executable file.
 
 ### Download Python Script onto RPi
 Similarly, from your home directory, make a folder called 'LDR'. Use the command below to clone the Python code from https://pimylifeup.com/raspberry-pi-light-sensor/.
