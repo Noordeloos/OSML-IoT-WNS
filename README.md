@@ -39,8 +39,8 @@ The project requires:
 ## Scripts/Circuits:
 - http://pastebin.com/raw/qwXLu0hu
 - https://pimylifeup.com/raspberry-pi-light-sensor/
-- Circuit diagram 1
-- Circuit diagram 2
+- Pin Diagram
+- Circuit Diagram
 - Flow
 
 let's Get Started!
@@ -98,6 +98,9 @@ node-red-start
 
 ## CIRCUIT DIAGRAMS
 ### Follow circuit
+
+![img_3002](https://user-images.githubusercontent.com/9855662/27614444-a720a476-5b56-11e7-857c-1d1993ddfb51.JPG) ![img_3004](https://user-images.githubusercontent.com/9855662/27614459-b7607c4e-5b56-11e7-9b54-99815e2fda4d.JPG)
+
 1. From pin 2 on the Pi, connect a wire to the power pin on the DHT11. 
 2. From pin & on the Pi, connect a wire to the data pin onthe DHT11. 
 3. From the ground pin on the DHT11, connect a wire to the negative (long) end of the capacitor. 
@@ -114,7 +117,7 @@ mkdir DHT11
 cd DHT11
 vi dht11.c
 ```
-Then, follow the instructions [here](http://pastebin.com/raw/qwXLu0hu) to write and compile an executable file.
+Then, follow the instructions [here](http://pastebin.com/raw/qwXLu0hu) to write and compile an executable file. Note that often, while pasting contents from your clipboard to vi editor, the paste function will truncate the first two characters from your file. To fix this, hit the 'Esc' key on your keyboard, use your arrow keys to travel up to the begining of your file. Compare the pasted text to the original. If characters are missing, at the start of your file, press the 'insert' key on your keyboard. Type the needed characters and hit the 'Esc' key. Type ":wq!" and hit the 'Enter' key. You are now ready to compile your file. You are now ready to continue the [compiling instructions](http://pastebin.com/raw/qwXLu0hu).
 
 ### Download Python Script onto RPi
 Similarly, from your home directory, make a folder called 'LDR'. Use the command below to clone the [Python code](https://pimylifeup.com/raspberry-pi-light-sensor/).
