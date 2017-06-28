@@ -53,6 +53,9 @@ Solder header onto the top side of the Pi Zero boards.
 ### Make Cases
 Our lab has a laser cutter, so we custom-made cases for our Pi Zeros. You may find the schematics we used for our laser-cutter [here](https://www.thingiverse.com/make:282969). The schematics are bespoke for a non-wireless Pi Zero, but they can still be used for the wireless Pi Zeros; although the heat vent won't line up as nicely. If getting a Pi as part of a kit, like CanaKit, you can use the included case. You may order a Pi through CanaKit [here](www.canakit.com).
 
+![img_3005](https://user-images.githubusercontent.com/9855662/27616603-c836a228-5b65-11e7-9a0d-04a8e4c189b9.JPG)
+
+
 ### Widen RPi holes
 If using the bespoke laser-cut case like we did, I recommend enlarging the corner holes of the Pi Zero board. We used M3 bolts to secure the case, so we widened the holes using incrasingly larger drill bits.
 
@@ -64,6 +67,8 @@ Plug to power cord.
 
 ### Connect to display monitor
 Use an HDMI to HDMImini adaptor to connect the display to the Pi Zero. Connect keyboard and mouse to a USB 2.0 hub. Connect the hub to USBmini to the board. If using a Raspberry Pi 3, use a USB wifi dongle to get wireless connectivity.
+
+![img_2956](https://user-images.githubusercontent.com/9855662/27616657-255adb0e-5b66-11e7-952c-bf7dba7c5dca.JPG)
 
 
 ## SOFTWARE
