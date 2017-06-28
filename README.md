@@ -206,6 +206,9 @@ Now that you know how to setup one Pi, you can repeat this process as many times
 ### Connect to BlueMix
 1. Create a account with IBM bluemix.
 2. Launch an IoT platform service.
+
+![watson plateform](https://user-images.githubusercontent.com/29682535/27618319-62598e9c-5b70-11e7-88c2-d33f6226b8f3.PNG)
+
 3. Follow this recipe to create and register a device (Pi) with Bluemix. Be sure to copy the device credentials.  https://developer.ibm.com/recipes/tutorials/how-to-register-devices-in-ibm-iot-foundation/
 6. In Node-RED, double click the 'Watson IoT' node. An 'Edit' window will appear.
 7. Select the 'Registered' circle, then click the 'pencil' icon. 
