@@ -53,7 +53,7 @@ Solder header onto the top side of the Pi Zero boards.
 ### Make Cases
 Our lab has a laser cutter, so we custom-made cases for our Pi Zeros. You may find the schematics we used for our laser-cutter [here](https://www.thingiverse.com/make:282969). The schematics are bespoke for a non-wireless Pi Zero, but they can still be used for the wireless Pi Zeros; although the heat vent won't line up as nicely. If getting a Pi as part of a kit, like CanaKit, you can use the included case. You may order a Pi through CanaKit [here](www.canakit.com).
 
-![img_3005](https://user-images.githubusercontent.com/9855662/27616603-c836a228-5b65-11e7-9a0d-04a8e4c189b9.JPG)
+![img_3005](https://user-images.githubusercontent.com/9855662/27617415-03ac0a46-5b6b-11e7-91ac-7a8b1bfbd80c.JPG)
 
 
 ### Widen RPi holes
@@ -68,7 +68,7 @@ Plug to power cord.
 ### Connect to display monitor
 Use an HDMI to HDMImini adaptor to connect the display to the Pi Zero. Connect keyboard and mouse to a USB 2.0 hub. Connect the hub to USBmini to the board. If using a Raspberry Pi 3, use a USB wifi dongle to get wireless connectivity.
 
-![img_2956](https://user-images.githubusercontent.com/9855662/27616657-255adb0e-5b66-11e7-952c-bf7dba7c5dca.JPG)
+![img_2956](https://user-images.githubusercontent.com/9855662/27617395-e6033d34-5b6a-11e7-957e-18fbd086e8e4.JPG)
 
 
 ## SOFTWARE
@@ -127,26 +127,60 @@ vi dht11.c
 Then, follow the instructions [here](http://pastebin.com/raw/qwXLu0hu) to write and compile an executable file. Note that often, while pasting contents from your clipboard to vi editor, the paste function will truncate the first two characters from your file. To fix this, hit the 'Esc' key on your keyboard, use your arrow keys to travel up to the begining of your file. Compare the pasted text to the original. If characters are missing, at the start of your file, press the 'insert' key on your keyboard. Type the needed characters and hit the 'Esc' key. Type ":wq!" and hit the 'Enter' key. You are now ready to compile your file. You are now ready to continue the [compiling instructions](http://pastebin.com/raw/qwXLu0hu).
 
 ### Download Python Script onto RPi
-Similarly, from your home directory, make a folder called 'LDR'. Use the command below to clone the [Python code](https://pimylifeup.com/raspberry-pi-light-sensor/).
+Similarly, from your home directory, make a folder and a file in it.
 ```
 mkdir LDR
 cd LDR
-git clone https://github.com/pimylifeup/Light_Sensor/
-cd ./Light_Sensor
-```
-Because this code comes from a different tutorial that only uses the LDR sensor, we have to adjust out pin settings for our purposes. We will open up the new light sensor file and replace one line of code.
-```
 vi light_sensor.py
 ```
-Hit the 'Esc' key. Using the arrow keys, navigate the cursor to the begining of the line 'GPIO.setmode(GPIO.BOARD)'. 
+Paste this code onto your file
+```python
+import RPi.GPIO as GPIO
+import time
 
-![ignore warnings](https://user-images.githubusercontent.com/9855662/27616556-6882548a-5b65-11e7-8b62-7a0373e7cf04.PNG)
+__author__ = 'Gus (Adapted from Adafruit)'
+__license__ = "GPL"
+__maintainer__ = "pimylifeup.com"
 
-Hit the 'Insert' key. Type "GPIO.setwarnings(False)" and hit 'Enter'. Hit the 'Esc' key one more time and cursor down to right before the number 7.
 
-![pin7 to 12](https://user-images.githubusercontent.com/9855662/27615777-846708a4-5b5f-11e7-9b61-595777d0ee40.PNG)
+GPIO.setwarnings(False)
 
-Hit the 'Delete' key on the keyboard. Hit the 'Insert' key on the keyboard and type "12". Hit the 'Esc' key and type ":wq!". Now, your file has been modified to use the 12th pin on the Pi instead of the 7th pin.
+GPIO.setmode(GPIO.BOARD)
+
+#define the pin that goes to the circuit
+pin_to_circuit = 12
+
+def rc_time (pin_to_circuit):
+    count = 0
+
+    #Output on the pin for
+    GPIO.setup(pin_to_circuit, GPIO.OUT)
+    GPIO.output(pin_to_circuit, GPIO.LOW)
+    time.sleep(0.1)
+
+    #Change the pin back to input
+    GPIO.setup(pin_to_circuit, GPIO.IN)
+
+    #Count until the pin goes high
+    while (GPIO.input(pin_to_circuit) == GPIO.LOW):
+        count += 1
+
+    return count
+
+#Catch when script is interupted, cleanup correctly
+try:
+    # Main loop
+print rc_time(pin_to_circuit)
+except KeyboardInterrupt:
+    pass
+finally:
+    GPIO.cleanup()
+```
+Again, while pasting contents from your clipboard to vi editor, the paste function will truncate the first two characters from your file. To fix this, hit the 'Esc' key on your keyboard, use your arrow keys to travel up to the begining of your file. Compare the pasted text to the original. If characters are missing, at the start of your file, press the 'insert' key on your keyboard. Type the needed characters and hit the 'Esc' key. Type ":wq!" and hit the 'Enter' key. Now, your file is ready to test! On your command line, type:
+```
+python light_sensor.py
+```
+If you get a number, it works!
 
 ### Run Node-RED
 Type the command, `node-red-start`, to make sure Node-RED is running. Look for the line on the startup message that gives you the IP address to access from your internet browser. It should be something like '123.123.0.123:1880'. Enter the IP address you get into your web browser and you should load something like this. Note the dashboard tab.
