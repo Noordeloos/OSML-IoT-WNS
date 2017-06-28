@@ -133,11 +133,15 @@ Because this code comes from a different tutorial that only uses the LDR sensor,
 ```
 vi light_sensor.py
 ```
-Hit the 'Esc' key. Using the arrow keys, navigate the cursor to right before the number 7.
+Hit the 'Esc' key. Using the arrow keys, navigate the cursor to the begining of the line 'GPIO.setmode(GPIO.BOARD)'. 
+
+![ignore warnings](https://user-images.githubusercontent.com/9855662/27616556-6882548a-5b65-11e7-8b62-7a0373e7cf04.PNG)
+
+Hit the 'Insert' key. Type "GPIO.setwarnings(False)" and hit 'Enter'. Hit the 'Esc' key one more time and cursor down to right before the number 7.
 
 ![pin7 to 12](https://user-images.githubusercontent.com/9855662/27615777-846708a4-5b5f-11e7-9b61-595777d0ee40.PNG)
 
-Hit the 'Delete' key on the keyboard. Hit the 'Insert' key on the keyboard and type "12". Hit the 'Esc' key one more time and type ":wq!". Now, your file has been modified to use the 12th pin on the Pi instead of the 7th pin.
+Hit the 'Delete' key on the keyboard. Hit the 'Insert' key on the keyboard and type "12". Hit the 'Esc' key and type ":wq!". Now, your file has been modified to use the 12th pin on the Pi instead of the 7th pin.
 
 ### Run Node-RED
 Type the command, `node-red-start`, to make sure Node-RED is running. Look for the line on the startup message that gives you the IP address to access from your internet browser. It should be something like '123.123.0.123:1880'. Enter the IP address you get into your web browser and you should load something like this. Note the dashboard tab.
