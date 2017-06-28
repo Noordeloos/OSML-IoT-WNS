@@ -5,6 +5,9 @@ __author__ = 'Gus (Adapted from Adafruit)'
 __license__ = "GPL"
 __maintainer__ = "pimylifeup.com"
 
+
+GPIO.setwarnings(False)
+
 GPIO.setmode(GPIO.BOARD)
 
 #define the pin that goes to the circuit
@@ -30,7 +33,7 @@ def rc_time (pin_to_circuit):
 #Catch when script is interupted, cleanup correctly
 try:
     # Main loop
-    print rc_time(pin_to_circuit)
+print rc_time(pin_to_circuit)
 except KeyboardInterrupt:
     pass
 finally:
