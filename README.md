@@ -6,7 +6,7 @@ The purpose of this project is to convert PiZeros into wireless network nodes th
 
 | ![img_2986](https://user-images.githubusercontent.com/9855662/27617527-c1665ee2-5b6b-11e7-8389-21d448db42c1.JPG) | ![flow](https://user-images.githubusercontent.com/9855662/27617614-59f90e5c-5b6c-11e7-9875-db418fb1d27b.PNG) | ![bluemix](https://user-images.githubusercontent.com/9855662/27617466-51bb4102-5b6b-11e7-85f8-b602979f30d9.PNG) |
 |:---:|:---:|:---:|
-|2/3 Pi nodes|Node-RED Flow| Bluemix dashboard |
+|Pi units|Node-RED Flow| Bluemix dashboard |
 
 The project requires:
 
