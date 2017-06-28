@@ -200,7 +200,19 @@ Type the command, `node-red-start`, to make sure Node-RED is running. Look for t
 7. Test it! Click the light blue button to the left of the 'Light, Temperaure, Humidity' bubble. See your progress on the debug tab on the right.
 
 
-# Repeat!
+## Repeat!
 Now that you know how to setup one Pi, you can repeat this process as many times as necesary for you to incorporate more nodes into your wireless sensor network.
 
 ### Connect to BlueMix
+1. Create a account with IBM bluemix.
+2. Launch an IoT platform service.
+3. Follow this recipe to create and register a device (Pi) with Bluemix. Be sure to copy the device credentials.  https://developer.ibm.com/recipes/tutorials/how-to-register-devices-in-ibm-iot-foundation/
+4. In Node-RED, drag and drop a 'Watson IoT' output node into the flow.
+5. Connect the outputs of both function Nodes to the 'Watson IoT' node.
+6. Double click the 'Watson IoT' node. An 'Edit' window will appear.
+7. Select the 'Registered' circle, then click the 'pencil' icon. 
+8. Fill in the device credentials, then click 'update' and 'done'.
+9. Click 'Deploy' and the 'Watson IoT' node will display 'connected'.
+10. Now that the Pi is connected to Bluemix, follow this recipe to create Boards and cards that display real-time data. https://developer.ibm.com/recipes/tutorials/configuring-the-cards-in-the-new-watson-iot-dashboard/
+11. Repeat for the remaining two Pis
+
