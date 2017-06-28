@@ -99,7 +99,9 @@ node-red-start
 ## CIRCUIT DIAGRAMS
 ### Follow circuit
 
-![img_3002](https://user-images.githubusercontent.com/9855662/27614444-a720a476-5b56-11e7-857c-1d1993ddfb51.JPG) ![img_3004](https://user-images.githubusercontent.com/9855662/27614459-b7607c4e-5b56-11e7-9b54-99815e2fda4d.JPG)
+| ![Pin Diagram](https://user-images.githubusercontent.com/9855662/27614444-a720a476-5b56-11e7-857c-1d1993ddfb51.JPG) | ![Circuit Diagram](https://user-images.githubusercontent.com/9855662/27614459-b7607c4e-5b56-11e7-9b54-99815e2fda4d.JPG) |
+|:---:|:---:|
+| Pin Diagram | Circuit Diagram |
 
 1. From pin 2 on the Pi, connect a wire to the power pin on the DHT11. 
 2. From pin & on the Pi, connect a wire to the data pin onthe DHT11. 
