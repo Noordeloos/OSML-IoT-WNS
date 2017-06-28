@@ -199,9 +199,13 @@ Type the command, `node-red-start`, to make sure Node-RED is running. Look for t
 6. You should see a flow trailing your cursor. Click on the area on the clean screen where you would like to paste it. Click the top right 'Deploy' Button.
 7. Test it! Click the light blue button to the left of the 'Light, Temperaure, Humidity' bubble. See your progress on the debug tab on the right.
 
+Your flow should look something like this:
+
+![flow](https://user-images.githubusercontent.com/9855662/27617614-59f90e5c-5b6c-11e7-9875-db418fb1d27b.PNG)
 
 ## Repeat!
 Now that you know how to setup one Pi, you can repeat this process as many times as necesary for you to incorporate more nodes into your wireless sensor network.
+
 
 ### Connect to BlueMix
 1. Create a account with IBM bluemix.
@@ -216,3 +220,6 @@ Now that you know how to setup one Pi, you can repeat this process as many times
 10. Now that the Pi is connected to Bluemix, follow this recipe to create Boards and cards that display real-time data. https://developer.ibm.com/recipes/tutorials/configuring-the-cards-in-the-new-watson-iot-dashboard/
 11. Repeat for the remaining two Pis
 
+Your dashboard should look something like this at the end:
+
+![bluemix](https://user-images.githubusercontent.com/9855662/27617466-51bb4102-5b6b-11e7-85f8-b602979f30d9.PNG)
