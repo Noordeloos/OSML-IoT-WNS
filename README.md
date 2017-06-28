@@ -4,6 +4,10 @@ Wireless network of temperature, humidity, and light sensors on Raspberry Pi Zer
 This project is a collaboration between Theo Noordeloos and Joy Lopez Cervera with help from Dan Hendricks at the Open Source Maker Labs.
 The purpose of this project is to convert PiZeros into wireless network nodes that sample temperature and humidity via a DHT11 sensor, and samples light via a LDR sensor; feed the information via wireless through a Node-RED flow; visualize the data via the IBM IoT BlueMix cloud. This project adapts and integrates different recipes into this particular mix of features. I will link the addresses of the inspiration content below. For detailed instructions with pictures, visit my blog post here.
 
+| ![img_2986](https://user-images.githubusercontent.com/9855662/27617527-c1665ee2-5b6b-11e7-8389-21d448db42c1.JPG) | ![flow](https://user-images.githubusercontent.com/9855662/27617614-59f90e5c-5b6c-11e7-9875-db418fb1d27b.PNG) | ![bluemix](https://user-images.githubusercontent.com/9855662/27617466-51bb4102-5b6b-11e7-85f8-b602979f30d9.PNG) |
+|:---:|:---:|:---:|
+|2/3 Pi nodes|Node-RED Flow| Bluemix dashboard |
+
 The project requires:
 
 ## Hardware:
