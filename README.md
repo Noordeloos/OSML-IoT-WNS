@@ -199,5 +199,8 @@ Type the command, `node-red-start`, to make sure Node-RED is running. Look for t
 6. You should see a flow trailing your cursor. Click on the area on the clean screen where you would like to paste it. Click the top right 'Deploy' Button.
 7. Test it! Click the light blue button to the left of the 'Light, Temperaure, Humidity' bubble. See your progress on the debug tab on the right.
 
-### Connect to BlueMix
 
+# Repeat!
+Now that you know how to setup one Pi, you can repeat this process as many times as necesary for you to incorporate more nodes into your wireless sensor network.
+
+### Connect to BlueMix
